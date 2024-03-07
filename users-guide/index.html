@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPFKHJQDQW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WPFKHJQDQW');
+</script>
+    
+    <title>Simu5G User’s Guide &#8212; Simu5G 1.2.2 documentation</title>
+
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" href="../_static/material-design-lite-1.3.0/material.blue-light_blue.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx_materialdesign_theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fontawesome/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Showcases" href="../showcases/index.html" />
+    <link rel="prev" title="Simu5G Model Documentation" href="../index.html" /> 
+  </head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header  ">
+    <div class="mdl-layout__header-row">
+        
+        <nav class="mdl-navigation breadcrumb">
+            <a class="mdl-navigation__link is-active">Simu5G User’s Guide</a>
+        </nav>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+        
+<form class="form-inline pull-sm-right" action="../search.html" method="get">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+        <label id="quick-search-icon" class="mdl-button mdl-js-button mdl-button--icon"  for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="q"  id="waterfall-exp" placeholder="Search" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </div>
+      </div>
+      <div class="mdl-tooltip" data-mdl-for="quick-search-icon">
+      Quick search
+      </div>
+</form>
+        
+        </nav>
+    </div>
+</header><header class="mdl-layout__drawer">
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simu5G User’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../showcases/index.html">Showcases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../showcases/NR/standalone/doc/index.html">NR Standalone</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/NR/doc/index.html">NR Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://omnetpp.org/doc/simu5g/api-current/neddoc/">NED Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://simu5g.org">← Back to the Simu5G Site</a></li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+        <main class="mdl-layout__content" tabIndex="0">
+
+	<script type="text/javascript" src="../_static/sphinx_materialdesign_theme.js "></script>
+    <header class="mdl-layout__drawer">
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+            
+            <nav class="mdl-navigation">
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Simu5G User’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../showcases/index.html">Showcases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../showcases/NR/standalone/doc/index.html">NR Standalone</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/NR/doc/index.html">NR Tutorial</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://omnetpp.org/doc/simu5g/api-current/neddoc/">NED Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://simu5g.org">← Back to the Simu5G Site</a></li>
+</ul>
+
+            </nav>
+        
+        </div>
+    
+</header>
+
+    <div class="document">
+        <div class="page-content">
+        
+  <div class="section" id="simu5g-user-s-guide">
+<h1>Simu5G User’s Guide<a class="headerlink" href="#simu5g-user-s-guide" title="Permalink to this headline">¶</a></h1>
+<p>Release: 1.2.2</p>
+<p>This manual is written for users who are interested in assembling
+simulations using the components provided by Simu5G.</p>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Simu5G is a 5G New Radio (NR) simulator based on the OMNeT++ simulation
+framework, and provides a collection of models with well-defined
+interfaces, which can be instantiated and connected to build arbitrarily
+complex simulation scenarios. Simu5G incorporates all the models from
+the INET library, which allows one to simulate generic TCP/IP networks
+including 5G NR layer-2 interfaces. In particular, Simu5G simulates the
+data plane of the 5G Radio Access Network (RAN) and 5G Core (5GC)
+network.</p>
+<p>Simu5G extends its predecessor SimuLTE, hence it shares many of the
+functionalities with it, as well as the general architecture and design
+choices. For this reason, many of the classes mentioned throughout this
+document have a name with the “Lte” prefix.</p>
+<p>Before reading this document, it is warmly suggested that novice users
+take a look at the OMNeT++ and INET documentation.</p>
+</div>
+<div class="section" id="high-level-architecture">
+<h2>High-level architecture<a class="headerlink" href="#high-level-architecture" title="Permalink to this headline">¶</a></h2>
+<p>Considering an end-to-end perspective, Simu5G is able to simulate all
+the components in &lt;TODO replace with figure with UE, gNB,
+UPF, internet, server&gt;. The element in grey are the ones that are
+entirely realized using modules from the INET library. In other words,
+Simu5G adds to the INET ecosystem the 4G/5G radio access network and
+core network.</p>
+<p>By composing the above modules, it is possible to implement any network
+scenarios, possibly including multiple users, base stations, remote
+servers and so on.</p>
+<p><em>User Equipments</em> (UEs) and <em>gNodeBs</em> (gNBs) are the main nodes of the
+Radio Access Network (RAN), and are connected to Internet domain via the
+5G Core (5GC) network. Since Simu5G only models the data plane of the
+mobile network, the CN is represented by a set of <em>User Plane Functions</em>
+(UPFs), whose scope is to route traffic between the gNBs and the
+Internet. A variable number of UPFs can be present in a Simu5G network,
+and one of them acts as the entry/exit point of the mobile network
+domain.</p>
+<p>As far as the RAN is concerned, gNBs can connect to each other via the
+<em>X2 interface</em>. This is used for handover purposes (i.e., allowing a UE
+to move from one serving gNB to another one), and can be employed for
+interference coordination.</p>
+<p>gNB can be organized in StandAlone (SA) or Non StandAlone (NSA)
+deployments. In a SA deployment, gNBs are directly connected to the 5GC,
+whereas with NSA the gNB is connected to a primary eNodeB (eNB) - i.e.,
+a 4G (LTE) Base Station -, which is in turn connected to the Evolved
+Packet Core (EPC) - i.e., the 4G Core Network. All the 5G data traffic
+will need to traverse the eNB before reaching the gNB or the core
+network. The latter deployment enables the so-called EUTRAN-NR Dual
+Connectivity (ENDC).</p>
+<p>Two special nodes, namely the Binder and CarrierAggregation modules, are
+singleton module that provide information and functions that can be
+accessed and used by all the other nodes in the network via method
+calls.</p>
+<div class="section" id="main-nodes">
+<h3>Main nodes<a class="headerlink" href="#main-nodes" title="Permalink to this headline">¶</a></h3>
+<p>In this section, we present the main modules of the Simu5G architecture.</p>
+<div class="section" id="nrue">
+<h4>NRUe<a class="headerlink" href="#nrue" title="Permalink to this headline">¶</a></h4>
+<p>The <em>NRUe</em> module is described by the
+<a class="reference external" href="https://github.com/Unipisa/Simu5G/blob/master/src/nodes/NR/NRUe.ned">nodes/NR/NrUe.ned</a>
+file. Its structure is depicted in Figure X. It is a compound module,
+which includes all the modules implementing the protocol stack, from the
+application layer to the data link and PHY layer. Specifically, it
+includes:</p>
+<ul class="simple">
+<li><p>a vector of application modules, which can be any INET compatible
+application. Such applications can be based either on TCP or UDP, and
+their number can be configured by setting the <code class="docutils literal notranslate"><span class="pre">numApps</span></code> paramater.</p></li>
+<li><p>UDP, TCP and SCTP modules as transport-layer protocols, taken from
+INET (refer to … for details);</p></li>
+<li><p>IPv4 and IPv6 modules as network-layer protocols, taken from INET
+(refer to … for details). Note: IPv6 is not fully supported at the
+moment;</p></li>
+<li><p><em>cellularNic</em> module, which represents the Network Interface Card
+(NIC) implementing the 5G NewRadio protocol stack. The NIC represents
+the main implementation effort of Simu5G, and will be discussed later
+in more detail.</p></li>
+</ul>
+<p>Data packets sent by an application traverse all the protocol stack
+until they reach the <em>cellularNic</em> module, which further processes them
+according to the 5G NR protocol and sends them to the serving gNB.
+Likewise, packets from the gNB are received by the <em>cellularNic</em> module
+and flow upwards to the proper receiving application.</p>
+<p>Moreover, loopback (lo) and Ethernet (eth) NICs are optionally
+available. The former can be used for handling local traffic, whereas
+the latter can be used to connect the UE to another host via a wired
+link and for <em>emulation</em> purposes.</p>
+<p>Finally, the <em>mobility</em> module defines how the UE moves within the
+simulation floorplan. The mobility type can be easily configured from
+the INI configuration file, and any INET mobility module is supported.
+See … for more detail on mobility.</p>
+<p>In other words, a UE is a mobile Internet host, endowed with 5G
+capabilities thanks to the <em>cellularNic</em> module, which allows the UE to
+connect and exchange data with one gNB.</p>
+</div>
+<div class="section" id="gnodeb">
+<h4>gNodeB<a class="headerlink" href="#gnodeb" title="Permalink to this headline">¶</a></h4>
+<p>The <em>gNodeB</em> module is described by the
+<a class="reference external" href="https://github.com/Unipisa/Simu5G/blob/master/src/nodes/NR/gNodeB.ned">nodes/NR/gNodeB.ned</a>
+file. It is a compound module and its structure is depicted in Figure X.
+On the RAN side, it includes a <em>cellularNic</em> module that implements the
+gNB-side of the 5G NR protocol and allows it to send/receive packets
+to/from all connected UEs over the radio channel (this will described
+later in more detail), whereas IPv4 and IPv6 modules (taken from INET,
+refer to … for details) provide network-layer functionalities (Note:
+IPv6 is not fully supported at the moment).</p>
+<p>On the 5GC side, wired connectivity is realized via the Point-to-Point
+Protocol (PPP) by the <em>pppIf</em> NIC. It is worth pointing out that data
+forwarding within the 5GC is realized via GPRS Tunneling Protocol (GTP).
+For this reason, packets received from UEs (i.e., from the <em>cellularNic</em>
+module) need to be encapsulated within a GTP packet before sending them
+through the <em>pppIf</em> NIC. Likewise, packets received from the 5GC (i.e.,
+from the <em>pppIf</em> interface) need to be decapsulated in order to get the
+original data packet before sending them to the <em>cellularNic</em> module.
+The GTP encapsulation/decapsulation procedure is performed by the
+<em>trafficFlowFilter</em> and <em>gtpUser</em> modules. More details on this will be
+provided in the dedicated section.</p>
+</div>
+<div class="section" id="upf">
+<h4>Upf<a class="headerlink" href="#upf" title="Permalink to this headline">¶</a></h4>
+<p>The <em>Upf</em> module is described by the
+<a class="reference external" href="https://github.com/Unipisa/Simu5G/blob/master/src/nodes/Upf.ned">nodes/NR/Upf.ned</a>
+file. Its main submodules are depicted in Figure X. The <em>Upf</em> module
+basically works like a INET router (indeed, it inherits its structure),
+as it includes vectors of different NIC types (such as PPP, ethernet and
+wireless LAN) that allows one to connect the Upf module to any other
+module using any kind of data link type.</p>
+<p>Moreover, the <em>Upf</em> module includes the <em>trafficFlowFilter</em> and
+<em>gtpUser</em> modules to enable GTP encapsulation/decapsulation, similar to
+the gNodeB module. Again, more details on this can be found in the
+dedicated section. These two modules are actually used by Upf only if it
+acts as the entry/exit point of the 5GC (i.e., connects the 5G network
+domain with the Internet domain).</p>
+<p>Instead, when the Upf module is used to model an intermediate UPF
+(iUPF), its behavior replicates the one of a classic router. In fact, it
+receives GTP packets on a NIC and sends them to the Ipv4 module, which
+in turn forwards them to the proper output NIC according to its
+forwarding table.</p>
+</div>
+<div class="section" id="binder">
+<h4>Binder<a class="headerlink" href="#binder" title="Permalink to this headline">¶</a></h4>
+<p>The <em>Binder</em> module is a simple module, defined in
+<a class="reference external" href="https://github.com/Unipisa/Simu5G/blob/master/src/nodes/NR/NRUe.ned">common/binder/Binder.ned</a>
+file. The Binder is visible by every other node in the simulation and
+stores information about them, such as references to nodes. It is used,
+for instance, to locate the interfering gNBs in order to compute the
+inter-cell interference perceived by a UE in its serving cell.</p>
+</div>
+<div class="section" id="carrieraggregation">
+<h4>CarrierAggregation<a class="headerlink" href="#carrieraggregation" title="Permalink to this headline">¶</a></h4>
+<p>The <em>CarrierAggregation</em> module is used to configure the Carrier
+Aggregation feature. It includes a vector of Component Carriers, each of
+them including the corresponding relevant parameters. There must be one
+(and one only) instance of the module in the network.</p>
+</div>
+</div>
+<div class="section" id="network-interface-card-modeling">
+<h3>Network Interface Card modeling<a class="headerlink" href="#network-interface-card-modeling" title="Permalink to this headline">¶</a></h3>
+<p>The core of Simu5G is the modeling of the 5G NewRadio protocol. The
+latter defines layer 1 and layer 2 of the TCP/IP protocol stack, hence
+we implemented by creating a specific NIC. Namely, the 5G NIC
+functionalities are provided by the <em>NRNicGnb</em> and <em>NRNicUe</em> modules.
+With reference to Figure X, they include all the layers of the NR
+protocol stack, from the PDCP to the physical layer.</p>
+</div>
+<div class="section" id="example-of-data-flow">
+<h3>Example of data flow<a class="headerlink" href="#example-of-data-flow" title="Permalink to this headline">¶</a></h3>
+<p>Use the table and tabular environments for basic tables — see
+Table <a class="reference external" href="#tab:widgets">1</a>, for example. For more information, please
+see this help article on
+<a class="reference external" href="https://www.overleaf.com/learn/latex/tables">tables</a>.</p>
+<div class="docutils container" id="tab-widgets">
+<table class="docutils align-default" id="id1">
+<caption><span class="caption-text">An example table.</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Item</p></th>
+<th class="head"><p>Quantity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Widgets</p></td>
+<td><p>42</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gadgets</p></td>
+<td><p>13</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="physical-layer-modeling">
+<h2>Physical layer modeling<a class="headerlink" href="#physical-layer-modeling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="channel-model">
+<h3>Channel model<a class="headerlink" href="#channel-model" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="channel-status-reporting">
+<h3>Channel status reporting<a class="headerlink" href="#channel-status-reporting" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="mac-layer">
+<h2>MAC layer<a class="headerlink" href="#mac-layer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scheduling">
+<h3>Scheduling<a class="headerlink" href="#scheduling" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="hybrid-arq">
+<h3>Hybrid ARQ<a class="headerlink" href="#hybrid-arq" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="rlc-layer">
+<h2>RLC layer<a class="headerlink" href="#rlc-layer" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pdcp-layer">
+<h2>PDCP layer<a class="headerlink" href="#pdcp-layer" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="x2">
+<h2>X2<a class="headerlink" href="#x2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="handover-procedure">
+<h2>Handover procedure<a class="headerlink" href="#handover-procedure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="handover-selection-algorithm">
+<h3>Handover selection algorithm<a class="headerlink" href="#handover-selection-algorithm" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="handover-management-via-the-x2-interface">
+<h3>Handover management via the X2 interface<a class="headerlink" href="#handover-management-via-the-x2-interface" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="dual-connectivity">
+<h2>Dual connectivity<a class="headerlink" href="#dual-connectivity" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="carrier-aggregation">
+<h2>Carrier aggregation<a class="headerlink" href="#carrier-aggregation" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="core-network-modeling">
+<h2>Core network modeling<a class="headerlink" href="#core-network-modeling" title="Permalink to this headline">¶</a></h2>
+<p>In particular, once an IP datagram is sent by the <em>cellularNic</em>, the
+latter sends it to the <em>gtpUser</em> module that takes care of i) identify
+the IP address of the next hop for the IP datagram within the 5GC, and
+ii) add a GTP header to the packet. The resulting GTP packet is then
+sent via the Udp and ipv4 modules to the node identified by the above IP
+address. More details about the GTP tunneling procedure are provided in
+the corresponding section.</p>
+</div>
+<div class="section" id="etsi-mec-modeling">
+<h2>ETSI MEC modeling<a class="headerlink" href="#etsi-mec-modeling" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+        </div>
+        <div class="side-doc-outline">
+            <div class="side-doc-outline--content"> 
+<div class="localtoc">
+    <p class="caption">
+      <span class="caption-text">Table Of Contents</span>
+    </p>
+    <ul>
+<li><a class="reference internal" href="#">Simu5G User’s Guide</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#high-level-architecture">High-level architecture</a><ul>
+<li><a class="reference internal" href="#main-nodes">Main nodes</a><ul>
+<li><a class="reference internal" href="#nrue">NRUe</a></li>
+<li><a class="reference internal" href="#gnodeb">gNodeB</a></li>
+<li><a class="reference internal" href="#upf">Upf</a></li>
+<li><a class="reference internal" href="#binder">Binder</a></li>
+<li><a class="reference internal" href="#carrieraggregation">CarrierAggregation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#network-interface-card-modeling">Network Interface Card modeling</a></li>
+<li><a class="reference internal" href="#example-of-data-flow">Example of data flow</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#physical-layer-modeling">Physical layer modeling</a><ul>
+<li><a class="reference internal" href="#channel-model">Channel model</a></li>
+<li><a class="reference internal" href="#channel-status-reporting">Channel status reporting</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#mac-layer">MAC layer</a><ul>
+<li><a class="reference internal" href="#scheduling">Scheduling</a></li>
+<li><a class="reference internal" href="#hybrid-arq">Hybrid ARQ</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rlc-layer">RLC layer</a></li>
+<li><a class="reference internal" href="#pdcp-layer">PDCP layer</a></li>
+<li><a class="reference internal" href="#x2">X2</a></li>
+<li><a class="reference internal" href="#handover-procedure">Handover procedure</a><ul>
+<li><a class="reference internal" href="#handover-selection-algorithm">Handover selection algorithm</a></li>
+<li><a class="reference internal" href="#handover-management-via-the-x2-interface">Handover management via the X2 interface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dual-connectivity">Dual connectivity</a></li>
+<li><a class="reference internal" href="#carrier-aggregation">Carrier aggregation</a></li>
+<li><a class="reference internal" href="#core-network-modeling">Core network modeling</a></li>
+<li><a class="reference internal" href="#etsi-mec-modeling">ETSI MEC modeling</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+            </div>
+        </div>
+
+      <div class="clearer"></div>
+    </div><div class="pagenation">
+     <a id="button-prev" href="../index.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="P">
+         <i class="pagenation-arrow-L fas fa-arrow-left fa-lg"></i>
+         <div class="pagenation-text">
+            <span class="pagenation-direction">Previous</span>
+            <div>Simu5G Model Documentation</div>
+         </div>
+     </a>
+     <a id="button-next" href="../showcases/index.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="N">
+         <i class="pagenation-arrow-R fas fa-arrow-right fa-lg"></i>
+        <div class="pagenation-text">
+            <span class="pagenation-direction">Next</span>
+            <div>Showcases</div>
+        </div>
+     </a>
+  </div>
+        
+        </main>
+    </div>
+  </body>
+</html>

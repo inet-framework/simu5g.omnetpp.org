@@ -1,0 +1,20 @@
+NR Standalone
+=============
+
+Goals
+-----
+
+TODO
+
+| Simu5G version: ``1.2.2``
+| Source files location: `simu5g/showcases/NR/standalone <https://github.com/Unipisa/Simu5G/tree/master/showcases/NR/standalone>`__
+
+TODO
+
+Sources: :download:`omnetpp.ini <../omnetpp.ini>`, :download:`TODO.ned <../TODO.ned>`
+
+Discussion
+----------
+
+Use `this page <https://github.com/Unipisa/Simu5G/discussions/TODO`__ in
+the GitHub issue tracker for commenting on this showcase.
